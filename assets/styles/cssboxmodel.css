@@ -1,0 +1,139 @@
+/* Box Model */
+/* text-align
+
+        left
+        center
+        right
+
+*/
+
+/* border
+
+        1st value = border-width
+        2nd value = border-style
+        3rd value = border-color
+
+*/
+
+/* Padding 
+
+        one value only = for all side
+
+
+*/
+.box1 {
+    width: 50%;
+    background-color: grey;
+    color: yellow;
+    text-align: center;
+    border: 5px solid red;   /*shortcut*/
+    /* padding: 20px; */
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    /* margin: 50px 30px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    box-sizing: border-box;  /*maintain the size of the box*/
+}
+
+.box2 {
+    width: 50%;
+    background-color: grey;
+    color: yellow;
+    text-align: center;
+    border: 5px solid red;
+    box-sizing: border-box;
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin: 50px auto;
+    /* border: none; */
+}
+
+.box2:hover {
+    width: 50%;
+    background-color: turquoise;
+    color: yellow;
+    text-align: center;
+    border: 5px solid red;
+    box-sizing: border-box;
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin: 50px auto;
+    /* border: none; */
+}
+
+/* hr */
+hr {
+    width: 30%;
+    height: 2px;
+    background-color: red;
+    border: none;
+}
+
+hr:hover {
+    width: 30%;
+    height: 4px;
+    background-color: aqua;
+    border: none;
+}
+
+
+/* CSS Borders */
+
+.solid {
+    height: 50px;
+    width: 100px;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: tomato; */
+    border: 5px solid tomato;
+    border-top: 10px double tomato;
+    border-right: 10px dotted tomato;
+}
+
+.dotted {
+    height: 50px;
+    width: 100px;
+    border: 5px dotted teal;
+    border-bottom: 10px ridge teal;
+    border-left: 10px inset teal;
+}
+
+/* 
+    dashed = crimson
+    double = seagreen
+    groove = purple
+    ridge = gray
+    inset = dodgerblue
+    outset = goldenrod
+
+
+
+*/
+
+.radius {
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    border: 5px solid black;
+    /* border-radius: 50px; */
+    border-top-left-radius: 50px;
+    border-start-end-radius: 50px;
+}
+
+
+
+/* box-shadow */
+.box-shadow {
+    box-shadow: 10px 15px 10px red;
+    border: 1px solid black;
+}
+
+.box-shadow:hover {
+    box-shadow: 10px 15px 10px yellow;
+    border: 1px solid black;
+}

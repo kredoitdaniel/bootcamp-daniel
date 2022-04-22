@@ -1,0 +1,225 @@
+/* Presets / Custom */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+/* header */
+.nav {
+    /* border: 5px solid red; */
+    width: 85%;
+    margin: 1em auto;
+    overflow: auto;
+}
+
+.nav h1 a {
+    float: left;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: grey;
+    text-decoration: none;
+    padding-top: 7px;
+}
+
+.nav h1 a:hover {
+    float: left;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: red;
+    text-decoration: none;
+    padding-top: 7px;
+}
+
+.nav ul {
+    float: right;
+    list-style: none;
+    margin: 1em auto;
+}
+
+.nav ul li {
+    /* border: 3px dashed blue; */
+    display: inline;
+}
+
+.nav ul li a {
+    /* border: 3px dashed darkgoldenrod; */
+    text-decoration: none; 
+    margin-left: 1em;
+    color: grey;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    /* border: 3px dashed darkgoldenrod; */
+    text-decoration: none; 
+    margin-left: 1em;
+    color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+
+/* section */
+.section {
+    /* border: 5px solid darkblue; */
+    overflow: auto;
+    margin: 1em auto;
+}
+
+.section-text {
+    /* border: 3px dashed darkgoldenrod; */
+    height: 500px;
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+#toyota {
+    background-image: url(../images/toyotacar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#suzuki {
+    background-image: url(../images/suzukicar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-text a {
+    background-color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1em;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.section-text a:hover {
+    background-color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    padding: 1em;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+/* CSS Position */
+/* static 
+
+        defualt position
+            will not support adjustment top, right, bottom and left
+
+*/
+.static {
+    background-color: red;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    left: 100px; /*not supported*/
+    margin-bottom: 2em; /*supported*/
+}
+
+
+
+/* relative */
+.relative1 {
+    height: 300px;
+    width: 45%;
+    background-color: yellow;
+    position: relative;
+    left: 4%;
+}
+
+.relative2 {
+    height: 300px;
+    width: 45%;
+    background-color: darkmagenta;
+    position: relative;
+    bottom: 300px;
+    left: 51%;
+    z-index: 2;
+}
+
+
+/* absolute no parent 
+
+        moves around the screen.
+
+*/
+.absolute1 {
+    height: 200px;
+    width: 20%;
+    background-color: aqua;
+    position: absolute;
+    bottom: -225px;
+    left: 40%;
+    z-index: 1;
+}
+
+
+
+/* absolute with parent 
+
+        child absolute will now relative/depends to the
+            size of the of the parent
+
+*/
+
+.parent-absolute2 {
+    height: 300px;
+    width: 45%;
+    background-color: darkgreen;
+    position: relative;
+    bottom: 270px;
+    left: 27.5%;
+}
+
+.child-absolute2 {
+    height: 150px;
+    width: 150px;
+    background-color: orangered;
+    position: absolute;
+    right: 0;
+    top: 100px
+}
+
+
+/* fixed */
+.fixed {
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    z-index: 3;
+}
+
+
+/* z-index */
+/* .absolute1 {
+    z-index: 1;
+}
+
+.relative2 {
+    z-index: 2;
+}
+
+.fixed {
+    z-index: 3;
+} */
